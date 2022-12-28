@@ -41,7 +41,7 @@ form.addEventListener('submit', (e)=> {
 
 // SEND MESSAGE TO ALL OTHER USERS.
 socket.on('receive', data => {
-    append(`${data.name}  ${data.message}`, 'left');
+    append(`${data.name}: ${data.message}`, 'left');
 })
 
 // MESSAGE OF LEAVING THE CHAT TO OTHERS.
